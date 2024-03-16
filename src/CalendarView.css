@@ -1,0 +1,27 @@
+.calendar-table,
+.orders-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.Foot {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+.calendar-table th,
+.calendar-table td,
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.calendar-table th,
+.orders-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f2f2f2;
+  color: black;
+}

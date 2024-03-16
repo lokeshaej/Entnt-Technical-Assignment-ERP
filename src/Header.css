@@ -1,0 +1,77 @@
+@keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  *{
+    margin-left: 100px;
+    padding: 0px;
+  }
+  .animated-header {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+    padding: 10px 20px; /* Increased padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 0.5s ease-out; /* Add animation */
+    margin-bottom: 40px;
+    margin-left: 0px; 
+    margin-top: 0px;
+    margin-right: 0px;/* Add margin at the bottom */
+  }
+  
+  .logo {
+    margin-left: 20px; /* Adjust margin for left spacing */
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  .line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: red; /* Color of the animated line */
+    transition: left 0.3s, width 0.3s; /* Add transition effect */
+  }
+  
+  nav {
+    position: relative;
+    align-items: center;
+    background-color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #000; /* Black text color */
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  nav ul li.active a {
+    color: red; /* Change color on click */
+  }
+  
+  nav ul li.active .line {
+    left: 0;
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    background-color: lightskyblue; /* Light gray hover background */
+  }
+  

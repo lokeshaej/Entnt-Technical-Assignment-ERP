@@ -1,0 +1,463 @@
+/* order.css */
+.order-container {
+    margin: 0px;
+  }
+  /* In your CSS file */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-left: 0px;
+}
+
+
+
+
+.footer {
+  flex-shrink: 0; /* Do not allow the footer to shrink */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  
+}
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: greenyellow;
+}
+
+.app {
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: hsl(206, 98%, 48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.search {
+  width: 71%;
+  margin: 4rem 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: whitesmoke;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+
+  outline: none;
+  color: #a1a1a1;
+  background: whitesmoke;
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* .search button {
+  padding: 20px 40px;
+  border-radius: 0.5rem;
+  margin-left: 15px;
+  color: #a1a1a1;
+  font-family: var(--font-raleway);
+  font-weight: 900;
+  letter-spacing: 0.75px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #1f2123;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+} */
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: red;
+  font-family: var(--font-raleway);
+}
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Productkx {
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.Productkx div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4;
+}
+
+.Productkx:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.Productkx div:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+}
+
+.Productkx div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+.Productkx div:nth-of-type(3) {
+  z-index: 2;
+  background-color: yellowgreen;
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.Productkx div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.Productkx div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+.Productkx:hover div:nth-of-type(2) {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.Productkx:hover div:nth-of-type(3) {
+  background-color: transparent;
+}
+
+.Productkx:hover div:nth-of-type(1) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .Productkx {
+    width: "100%";
+    margin: 1rem;
+  }
+}
+.product {
+  display: flex; /* Allow image and details to be displayed side-by-side */
+  flex-direction: column; /* Stack elements vertically (image on top) */
+  margin-bottom: 20px; /* Add space between products */
+}
+
+.product-details {
+  margin-top: 10px; /* Add space between image and details */
+}
+.product-box {
+  display: block; /* Display products side-by-side */
+  margin: 10px;
+  border: 1px solid #ddd; /* Border color */
+  padding: 10px;
+  width: 250px; /* Adjust width as needed */
+  text-align: center;
+}
+
+.product-image {
+  width: 100%; /* Image takes full width of the box */
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the box */
+  margin-bottom: 10px;
+}
+.product-box {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px; /* Adjust width as needed */
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Style the buttons */
+.buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Add specific colors for buttons */
+.buttons button.add-to-cart {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.buttons button.buy-now {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+/* ProductManagement.css */
+
+. .search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.new-product-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-product-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.new-product-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.new-product-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.new-product-form button:hover {
+  background-color: #0056b3;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.empty h2 {
+  color: #999;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Add spacing between products */
+}
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  margin-right: 5px;
+}
+
+/* Additional styles for edited products */
+.product.edited {
+  border-color: #007bff; /* Change border color to blue */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+}
