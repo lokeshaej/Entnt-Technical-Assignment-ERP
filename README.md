@@ -44,8 +44,13 @@ My Project is Almost Compteleted approximately 95% within 1 or 2 days i will upl
 ![Calender Date wise](https://github.com/lokeshaej/Entnt-Technical-Assignment-ERP/assets/70444653/9a3a9615-fd8e-4468-b4df-b0dfab9144b0)
           
          <h1>Calender Order Details View and Expected Delivery dates<h1/><h6><h6/>
-![Calender detail Order View](https://github.com/lokeshaej/Entnt-Technical-Assignment-ERP/assets/70444653/957b4c48-d78a-40ae-8428-0c045ecc6532)   
+![Calender detail Order View](https://github.com/lokeshaej/Entnt-Technical-Assignment-ERP/assets/70444653/957b4c48-d78a-40ae-8428-0c045ecc6532)
+
 <h1>Contact Us For Any Queries dates<h1/><h6><h6/>
 ![image](https://github.com/lokeshaej/Entnt-Technical-Assignment-ERP/assets/70444653/5eecd9eb-8ef3-4b8c-9b25-71d0220e7be6)
+  
+<h1>After Contact Us For Any Queries dates<h1/><h6><h6/>
+![image](https://github.com/lokeshaej/Entnt-Technical-Assignment-ERP/assets/70444653/0bceedf2-6f18-49ec-8863-f2ae1d3effbe)
+
 
 
